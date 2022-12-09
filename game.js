@@ -7,10 +7,13 @@ spieler.style.bottom = "0px";
 let timer = new Timer(55);
 var wasser = new Audio('sound/soundhintergrund.mp3')
 
+
+// Damit man auf eine andere Seite kommt
 function start() {
   window.location.href = "./game.html";
   }
   
+  // Kollision
 
 function collision() {
   let steine = document.querySelectorAll(".stein");
@@ -22,6 +25,8 @@ function collision() {
 
 
 }
+
+// Anker die herunterkommen
 
 function stein() {
   
@@ -57,6 +62,7 @@ function stein() {
   }
 }
 
+// Punktestand
 function versuch() {
   if (parseInt(spieler.style.left) > 1) {
     score = score + 1;
@@ -64,8 +70,9 @@ function versuch() {
   }
 }
 
+// Alle funktionen ausführen
 function loop() {
-  if (keyboard(39) && parseInt(spieler.style.left) < 300) {
+  if (keyboard(39) && parseInt(spieler.style.left) <450) {
     spieler.style.left = parseInt(spieler.style.left) + 5 + "px";
   }
   if (keyboard(37) && parseInt(spieler.style.left) > 0) {
