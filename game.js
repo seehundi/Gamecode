@@ -12,15 +12,15 @@ function start() {
   window.location.href = "./game.html";
   }
   
-function wasser(){
-
-    wasser.play()
-  
+ function wasser (){
+  if(timer.ready) {
+    explosion.play()
+  }
 }
 
 function collision() {
   let steine = document.querySelectorAll(".stein");
-  // Kommentar: sobald der Spieler mit Gegner1 oder 2 kollidiert, ist das Spiel fertig
+  
   if (anyCollision(spieler, steine)) {
     window.location.href = "./gameover.html";
     return;
