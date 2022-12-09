@@ -12,11 +12,6 @@ function start() {
   window.location.href = "./game.html";
   }
   
- function wasser (){
-  if(timer.ready) {
-    wasser.play()
-  }
-}
 
 function collision() {
   let steine = document.querySelectorAll(".stein");
@@ -77,7 +72,7 @@ function loop() {
   if (keyboard(37) && parseInt(spieler.style.left) > 0) {
     spieler.style.left = parseInt(spieler.style.left) - 5 + "px";
   }
-wasser();
+  wasser.play();
   versuch();
   collision();
   stein();
