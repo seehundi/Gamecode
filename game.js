@@ -5,11 +5,19 @@ const spieler = document.querySelector(".player");
 spieler.style.left = "0px";
 spieler.style.bottom = "0px";
 let timer = new Timer(55);
+var wasser = new Audio('sound/soundhintergrund.mp3')
+
 
 function start() {
   window.location.href = "./game.html";
   }
   
+function soundhintergrund(){
+  if(start) {
+    start.play()
+  }
+}
+
 function collision() {
   let steine = document.querySelectorAll(".stein");
   // Kommentar: sobald der Spieler mit Gegner1 oder 2 kollidiert, ist das Spiel fertig
@@ -69,7 +77,7 @@ function loop() {
   if (keyboard(37) && parseInt(spieler.style.left) > 0) {
     spieler.style.left = parseInt(spieler.style.left) - 5 + "px";
   }
-
+soundhintergrund();
   versuch();
   collision();
   stein();
