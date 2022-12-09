@@ -7,7 +7,6 @@ spieler.style.bottom = "0px";
 let timer = new Timer(55);
 var wasser = new Audio('sound/soundhintergrund.mp3')
 
-
 function start() {
   window.location.href = "./game.html";
   }
