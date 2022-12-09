@@ -12,10 +12,10 @@ function start() {
   window.location.href = "./game.html";
   }
   
-function soundhintergrund(){
-  if(start) {
-    start.play()
-  }
+function wasser(){
+
+    wasser.play()
+  
 }
 
 function collision() {
@@ -28,7 +28,7 @@ function collision() {
 
 
 }
-s
+
 function stein() {
   
   if (timer.ready()) {
@@ -77,7 +77,7 @@ function loop() {
   if (keyboard(37) && parseInt(spieler.style.left) > 0) {
     spieler.style.left = parseInt(spieler.style.left) - 5 + "px";
   }
-soundhintergrund();
+wasser();
   versuch();
   collision();
   stein();
