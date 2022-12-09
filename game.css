@@ -1,0 +1,100 @@
+
+/* Game */
+.playground {
+  position: relative;
+  background-repeat: no-repeat;
+  width: 348px;
+  height: 261px;
+  border: 1px solid blue;
+  background-image: url("img/background.jpg");
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.player {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.stein {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("img/anchor.png");
+  background-size: contain;
+}
+
+/* Gameover seite */
+
+.gameover {
+  background-image: url("img/hintergrundbild.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 348px;
+  height: 261px;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.gameover h1 {
+  margin-left: 30%;
+  padding-top: 25%;
+  font-family: 'Nerko One', cursive;
+}
+.button {
+  width: 49px;
+  height: 23px;
+  background-color: blue;
+  margin-left: 67%;
+  margin-top: 10%;
+  border-radius: 46%;
+}
+
+/* Gamestart seite */
+.gamestart {
+  background-image: url("img/start.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 348px;
+  height: 261px;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.gamestart h1 {
+  margin-left: 15%;
+  padding-top: 25%;
+  font-family: 'Nerko One', cursive;
+  font-size: 8px;
+}
+
+.buttongame {
+  width: 72px;
+  height: 23px;
+  background-color: blue;
+  margin-left: 67%;
+  margin-top: 10%;
+  border-radius: 46%;
+}
+
+/* Schriftarten */
+a {
+  color: white;
+  text-decoration: none;
+  margin: 15%;
+  padding-top: 55%;
+  font-family: 'Nerko One', cursive;
+  font-size: 12px;
+}
+
+p {
+  font-family: 'Nerko One', cursive;
+  margin-left: 85%;
+}
