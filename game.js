@@ -14,7 +14,7 @@ function start() {
   
  function wasser (){
   if(timer.ready) {
-    explosion.play()
+    wasser.play()
   }
 }
 
