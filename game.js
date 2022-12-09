@@ -28,7 +28,7 @@ function collision() {
 
 
 }
-
+s
 function stein() {
   
   if (timer.ready()) {
