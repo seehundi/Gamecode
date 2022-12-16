@@ -30,28 +30,14 @@ function stein() {
     let h = document.createElement("div");
     h.classList.add("stein");
     h.style.top = "0px";
-    h.style.left = "40px";
-    spielfeld.appendChild(h);
-  }
-  if (timer.ready()) {
-    let h = document.createElement("div");
-    h.classList.add("stein");
-    h.style.top = "0px";
-    h.style.left = "210px";
-    spielfeld.appendChild(h);
-  }
-  if (timer.ready()) {
-    let h = document.createElement("div");
-    h.classList.add("stein");
-    h.style.top = "80px";
-    h.style.left = "420px";
+    h.style.left = Math.random() * 517 + "px";
     spielfeld.appendChild(h);
   }
 
   let steine = document.querySelectorAll(".stein");
   for (let stein of steine) {
     stein.style.top = parseInt(stein.style.top) + 3 + "px";
-    if (parseInt(stein.style.top) > 1200) {
+    if (parseInt(stein.style.top) > 348) {
       stein.parentNode.removeChild(stein);
     }
   }
